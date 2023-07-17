@@ -1,0 +1,14 @@
+#result{
+    border-radius: 7px;
+    margin-top: 15px;
+    height: 47px;
+    width: 225px;
+}
+#butn{
+    background-color: rgb(195, 197, 197);
+    border: none;
+    border-radius: 30px;
+}
+.text{
+    font-size: 20px;
+}
