@@ -13,85 +13,100 @@
 </head>
 <body>
     <div class="container text-center bg-black mt-3" 
-        style="border-radius: 25px; height: 364px; width: 254px;">
+        style="border-radius: 25px; height: 400px; width: 254px;">
     <div class="row">
+        <div><h6 style="color: coral;" class="mt-2">CALCULATOR</h6></div>
         <div class="col-12">
-            <input id="result" type="text">
+            <input id="result" type="text" >
         </div>
     </div>
 
     <div class="row mt-3">
         <div class="col-3">
-            <button id="butn" type="submit" class="btn btn-sm-w-100">
+            <button id="butn" type="submit" class="btn btn-sm-w-100" onclick="allClear()">
                 <span class="text">AC</span>
             </button>
         </div>
 
         <div class="col-3">
-            <button id="butn" type="submit" class="btn btn-sm-w-100">
-                <span class="text">B</span>
+            <button id="butn" type="submit" class="btn btn-sm-w-100" onclick="removeOne()">
+                <span class="text">&#9003</span>
             </button>
         </div>
 
         <div class="col-3">
-            <button id="butn" type="submit" class="btn btn-sm-w-100">
+            <button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData('%')">
                 <span class="text">%</span>
             </button>
         </div>
 
         <div class="col-3">
-            <button id="butn" type="submit" class="btn btn-sm-w-100">
+            <button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData('/')">
                 <span class="text">/</span>
             </button>
         </div>
     </div>
     <div class="row mt-3">
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(1)"
+            style="background-color: rgb(241, 185, 164);">
             <span class="text">1</span></button></div>
 
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(2)"
+            style="background-color: rgb(241, 185, 164);">
                 <span class="text">2</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(3)"
+            style="background-color: rgb(241, 185, 164);">
                     <span class="text">3</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData('*')">
                         <span class="text">*</span></button></div>
     </div>
 
     <div class="row mt-3">
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(4)"
+            style="background-color: rgb(241, 185, 164);">
             <span class="text">4</span></button></div>
 
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(5)"
+            style="background-color: rgb(241, 185, 164);">
                 <span class="text">5</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(6)"
+            style="background-color: rgb(241, 185, 164);">
                     <span class="text">6</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData('-')">
                         <span class="text">-</span></button></div>
     </div>
 
     <div class="row mt-3">
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(7)"
+            style="background-color: rgb(241, 185, 164);">
             <span class="text">7</span></button></div>
 
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(8)"
+            style="background-color: rgb(241, 185, 164);">
                 <span class="text">8</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(9)"
+            style="background-color: rgb(241, 185, 164);">
                     <span class="text">9</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData('+')">
                         <span class="text">+</span></button></div>
     </div>
 
     <div class="row mt-3">
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(0)"
+            style="background-color: rgb(241, 185, 164);">
             <span class="text">0</span></button></div>
-
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
-                <span class="text">,</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" style="background-color: rgb(241, 185, 164);">
+<!-- 
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData(',')"
+            style="background-color: rgb(241, 185, 164);">
+                <span class="text">,</span></button></div> -->
+        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100" onclick="displayData('.')"
+            style="background-color: rgb(241, 185, 164);">
                     <span class="text">.</span></button></div>
-        <div class="col-3"><button id="butn" type="submit" class="btn btn-sm-w-100">
+        <div class="col-3"><button id="butn1" type="submit" class="btn btn-outline-success" onclick="displayAnswer()">
                         <span class="text">=</span></button></div>
     </div>
     </div>
 </body>
+<!-- external js file linked -->
+<script src="./calculator.js"></script>
 </html>
